@@ -162,7 +162,7 @@ a {
 }
 
 .header {
-  padding: 2%;
+  padding: 2% 2% 0%;
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -214,7 +214,7 @@ a {
 }
 
 .hero {
-  padding: 5% 2%;
+  padding: 25px 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -222,14 +222,15 @@ a {
 .hero__heading {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 2%;
+  margin-bottom: 7px;
 }
 .hero__cta {
   text-align: center;
+  line-height: 1.4;
 }
 @media (min-width: 1024px) {
   .hero {
-    padding: 4% 2%;
+    padding: 40px 3%;
   }
 }
 
@@ -247,7 +248,7 @@ a {
   position: relative;
   border: 5px #1c2f3d solid;
   width: 100%;
-  margin-bottom: 2%;
+  margin-bottom: 10px;
 }
 @media (min-width: 1024px) {
   .plan {
@@ -260,27 +261,33 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2%;
+  padding: 15px;
 }
 .plan__upper_featured {
   background-color: lightgoldenrodyellow;
 }
 @media (min-width: 1024px) {
   .plan__upper {
-    padding: 5% 2%;
+    padding: 20px 2%;
   }
 }
 .plan__title {
   font-size: 1.625rem;
   text-transform: uppercase;
-  padding-bottom: 1%;
+  padding-bottom: 5px;
   font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
 }
 @media (min-width: 1024px) {
   .plan__title {
     font-size: 1.5rem;
-    padding-bottom: 2%;
+    padding-bottom: 6px;
   }
+}
+.plan__desc {
+  line-height: 1.2;
+  text-align: center;
 }
 @media (min-width: 1024px) {
   .plan__desc {
@@ -298,26 +305,27 @@ a {
 }
 @media (min-width: 1024px) {
   .plan__lower {
-    padding-top: 7%;
+    padding-top: 20px;
   }
 }
 .plan__price {
   font-weight: bold;
   font-size: 2rem;
-  padding: 2%;
+  padding: 20px;
 }
 @media (min-width: 1024px) {
   .plan__price {
-    padding-bottom: 7%;
+    padding-bottom: 25px;
   }
 }
 .plan__features-list {
   list-style: disc;
-  padding-bottom: 2%;
+  padding-bottom: 20px;
+  line-height: 1.5;
 }
 @media (min-width: 1024px) {
   .plan__features-list {
-    padding-bottom: 7%;
+    padding-bottom: 25px;
   }
 }
 .plan__button {
@@ -327,7 +335,7 @@ a {
   padding: 10px;
   border-radius: 15%;
   cursor: pointer;
-  margin-bottom: 2%;
+  margin-bottom: 20px;
 }
 .plan__button:hover {
   -webkit-filter: brightness(120%);
@@ -335,7 +343,7 @@ a {
 }
 @media (min-width: 1024px) {
   .plan__button {
-    margin-bottom: 7%;
+    margin-bottom: 25px;
   }
 }
 .plan__banner {
@@ -344,12 +352,7 @@ a {
   height: 47.5px;
   background-size: cover;
   position: absolute;
-  top: 24%;
-}
-@media (min-width: 1024px) {
-  .plan__banner {
-    top: 21%;
-  }
+  top: 74px;
 }
 
 .footer {

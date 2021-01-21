@@ -34,7 +34,7 @@ a {
 }
 
 .header{
-	padding: 2%;
+	padding: 2% 2% 0%;
 	display: flex;
 	justify-content: space-between;
 	background-color: white;
@@ -92,7 +92,7 @@ a {
 }
 
 .hero{
-	padding: 5% 2%;
+	padding: 25px 3%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -100,15 +100,16 @@ a {
 	&__heading{
 		font-size: 2rem;
 		font-weight: bold;
-		margin-bottom: 2%;
+		margin-bottom: 7px;
 	}
 
 	&__cta{
 		text-align: center;
+		line-height: 1.4;
 	}
 
 	@include mixins.desktop {
-		padding: 4% 2%;
+		padding: 40px 3%;
 	}
 
 }
@@ -126,7 +127,7 @@ a {
 	position: relative;
 	border: 5px variables.$dark-blue solid;
 	width: 100%;
-	margin-bottom: 2%;
+	margin-bottom: 10px;
 
 	@include mixins.desktop {
 		width: 33%;
@@ -138,14 +139,14 @@ a {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 2%;
+		padding: 15px;
 
 		&_featured{
 			background-color: lightgoldenrodyellow;
 		}
 
 		@include mixins.desktop {
-			padding: 5% 2%;
+			padding: 20px 2%;
 		}
 
 
@@ -154,16 +155,21 @@ a {
 	&__title{
 		font-size: 1.625rem;
 		text-transform: uppercase;
-		padding-bottom: 1%;
+		padding-bottom: 5px;
 		font-weight: bold;
+		text-align: center;
+		line-height: 1.2;
 
 		@include mixins.desktop {
 			font-size: 1.5rem;
-			padding-bottom: 2%;
+			padding-bottom: 6px;
 		}
 	}
 
 	&__desc{
+		line-height: 1.2;
+		text-align: center;
+
 		@include mixins.desktop {
 			font-size: 0.875rem;
 		}
@@ -180,26 +186,27 @@ a {
 		}
 
 		@include mixins.desktop {
-			padding-top: 7%;
+			padding-top: 20px;
 		}
 	}
 
 	&__price{
 		font-weight: bold;
 		font-size: 2rem;
-		padding: 2%;
+		padding: 20px;
 
 		@include mixins.desktop {
-			padding-bottom: 7%;
+			padding-bottom: 25px;
 		}
 	}
 
 	&__features-list{
 		list-style: disc;
-		padding-bottom: 2%;
+		padding-bottom: 20px;
+		line-height: 1.5;
 
 		@include mixins.desktop {
-			padding-bottom: 7%;
+			padding-bottom: 25px;
 		}
 	}
 
@@ -210,14 +217,14 @@ a {
 		padding: 10px;
 		border-radius: 15%;
 		cursor: pointer;
-		margin-bottom: 2%;
+		margin-bottom: 20px;
 
 		&:hover{
 			filter: brightness(120%);
 		}
 
 		@include mixins.desktop {
-			margin-bottom: 7%;
+			margin-bottom: 25px;
 		}
 	}
 
@@ -227,11 +234,7 @@ a {
 		height: 47.5px;
 		background-size: cover;
 		position: absolute;
-		top: 24%;
-
-		@include mixins.desktop {
-			top: 21%;
-		}
+		top: 74px;
 	}
 }
 
