@@ -44,6 +44,10 @@ a {
 		background-size: cover;
 		width: 128px;
 		height: 41.5px;
+
+		&:hover{
+			filter: brightness(120%);
+		}
 	}
 
 	&__text{
@@ -84,6 +88,9 @@ a {
 
 .hero{
 	padding: 5% 2%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 	&__heading{
 		font-size: 2rem;
@@ -91,4 +98,80 @@ a {
 		margin-bottom: 2%;
 	}
 
+}
+
+.plan-display{
+	padding: 0% 2%;
+}
+
+.plan{
+	position: relative;
+	border: 5px variables.$dark-blue solid;
+	width: 100%;
+	margin-bottom: 2%;
+
+	&__upper{
+		border: 2px solid black;
+		background-color: variables.$gray;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2%;
+
+		&_featured{
+			background-color: lightgoldenrodyellow;
+		}
+	}
+
+	&__title{
+		font-size: 1.625rem;
+		text-transform: uppercase;
+		padding-bottom: 1%;
+		font-weight: bold;
+	}
+
+	&__lower{
+		border: 2px solid black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&_featured{
+			padding-top: 3%;
+		}
+	}
+
+	&__price{
+		font-weight: bold;
+		font-size: 2rem;
+		padding: 2%;
+	}
+
+	&__features-list{
+		list-style: disc;
+		padding-bottom: 2%;
+	}
+
+	&__button{
+		background-color: variables.$orange;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 10px;
+		border-radius: 15%;
+		cursor: pointer;
+		margin-bottom: 2%;
+
+		&:hover{
+			filter: brightness(120%);
+		}
+	}
+
+	&__banner{
+		background: url(../../src/img/recommended.png);
+		width: 197px;
+		height: 47.5px;
+		background-size: cover;
+		position: absolute;
+		top: 24%;
+	}
 }

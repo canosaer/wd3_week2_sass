@@ -173,6 +173,10 @@ a {
   width: 128px;
   height: 41.5px;
 }
+.header__logo-image:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
 .header__text {
   padding-left: 6px;
   font-size: 1.625rem;
@@ -206,10 +210,80 @@ a {
 
 .hero {
   padding: 5% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero__heading {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2%;
+}
+
+.plan-display {
+  padding: 0% 2%;
+}
+
+.plan {
+  position: relative;
+  border: 5px #1c2f3d solid;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.plan__upper {
+  border: 2px solid black;
+  background-color: #ddd9d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+.plan__upper_featured {
+  background-color: lightgoldenrodyellow;
+}
+.plan__title {
+  font-size: 1.625rem;
+  text-transform: uppercase;
+  padding-bottom: 1%;
+  font-weight: bold;
+}
+.plan__lower {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plan__lower_featured {
+  padding-top: 3%;
+}
+.plan__price {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 2%;
+}
+.plan__features-list {
+  list-style: disc;
+  padding-bottom: 2%;
+}
+.plan__button {
+  background-color: #e8a224;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 15%;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+.plan__button:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+.plan__banner {
+  background: url(../../src/img/recommended.png);
+  width: 197px;
+  height: 47.5px;
+  background-size: cover;
+  position: absolute;
+  top: 24%;
 }
 /*# sourceMappingURL=main.css.map */
