@@ -142,6 +142,7 @@ a {
 		padding: 15px;
 
 		&_featured{
+			@extend .plan__upper;
 			background-color: lightgoldenrodyellow;
 		}
 
@@ -182,7 +183,8 @@ a {
 		align-items: center;
 
 		&_featured{
-			padding-top: 3%;
+			@extend .plan__lower;
+			padding-top: 15px;
 		}
 
 		@include mixins.desktop {

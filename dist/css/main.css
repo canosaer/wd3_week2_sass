@@ -255,7 +255,7 @@ a {
     width: 33%;
   }
 }
-.plan__upper {
+.plan__upper, .plan__upper_featured {
   border: 2px solid black;
   background-color: #ddd9d2;
   display: flex;
@@ -267,7 +267,7 @@ a {
   background-color: lightgoldenrodyellow;
 }
 @media (min-width: 1024px) {
-  .plan__upper {
+  .plan__upper, .plan__upper_featured {
     padding: 20px 2%;
   }
 }
@@ -294,17 +294,17 @@ a {
     font-size: 0.875rem;
   }
 }
-.plan__lower {
+.plan__lower, .plan__lower_featured {
   border: 2px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .plan__lower_featured {
-  padding-top: 3%;
+  padding-top: 15px;
 }
 @media (min-width: 1024px) {
-  .plan__lower {
+  .plan__lower, .plan__lower_featured {
     padding-top: 20px;
   }
 }
