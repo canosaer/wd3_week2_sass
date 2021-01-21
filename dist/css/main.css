@@ -184,6 +184,11 @@ a {
       align-self: center;
   font-weight: bold;
 }
+@media (min-width: 1024px) {
+  .header__text {
+    font-size: 1.875rem;
+  }
+}
 
 .menu {
   display: flex;
@@ -219,9 +224,23 @@ a {
   font-weight: bold;
   margin-bottom: 2%;
 }
+.hero__cta {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .hero {
+    padding: 4% 2%;
+  }
+}
 
 .plan-display {
   padding: 0% 2%;
+}
+@media (min-width: 1024px) {
+  .plan-display {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .plan {
@@ -229,6 +248,11 @@ a {
   border: 5px #1c2f3d solid;
   width: 100%;
   margin-bottom: 2%;
+}
+@media (min-width: 1024px) {
+  .plan {
+    width: 33%;
+  }
 }
 .plan__upper {
   border: 2px solid black;
@@ -241,11 +265,27 @@ a {
 .plan__upper_featured {
   background-color: lightgoldenrodyellow;
 }
+@media (min-width: 1024px) {
+  .plan__upper {
+    padding: 5% 2%;
+  }
+}
 .plan__title {
   font-size: 1.625rem;
   text-transform: uppercase;
   padding-bottom: 1%;
   font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .plan__title {
+    font-size: 1.5rem;
+    padding-bottom: 2%;
+  }
+}
+@media (min-width: 1024px) {
+  .plan__desc {
+    font-size: 0.875rem;
+  }
 }
 .plan__lower {
   border: 2px solid black;
@@ -256,14 +296,29 @@ a {
 .plan__lower_featured {
   padding-top: 3%;
 }
+@media (min-width: 1024px) {
+  .plan__lower {
+    padding-top: 7%;
+  }
+}
 .plan__price {
   font-weight: bold;
   font-size: 2rem;
   padding: 2%;
 }
+@media (min-width: 1024px) {
+  .plan__price {
+    padding-bottom: 7%;
+  }
+}
 .plan__features-list {
   list-style: disc;
   padding-bottom: 2%;
+}
+@media (min-width: 1024px) {
+  .plan__features-list {
+    padding-bottom: 7%;
+  }
 }
 .plan__button {
   background-color: #e8a224;
@@ -278,6 +333,11 @@ a {
   -webkit-filter: brightness(120%);
           filter: brightness(120%);
 }
+@media (min-width: 1024px) {
+  .plan__button {
+    margin-bottom: 7%;
+  }
+}
 .plan__banner {
   background: url(../../src/img/recommended.png);
   width: 197px;
@@ -285,5 +345,17 @@ a {
   background-size: cover;
   position: absolute;
   top: 24%;
+}
+@media (min-width: 1024px) {
+  .plan__banner {
+    top: 21%;
+  }
+}
+
+.footer {
+  margin: 5%;
+}
+.footer__text {
+  color: #909097;
 }
 /*# sourceMappingURL=main.css.map */

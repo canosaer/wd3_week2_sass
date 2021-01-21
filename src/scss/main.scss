@@ -55,6 +55,11 @@ a {
 		font-size: 1.625rem;
 		align-self: center;
 		font-weight: bold;
+
+		@include mixins.desktop {
+			font-size: 1.875rem;
+		}
+
 	}
 }
 
@@ -98,10 +103,23 @@ a {
 		margin-bottom: 2%;
 	}
 
+	&__cta{
+		text-align: center;
+	}
+
+	@include mixins.desktop {
+		padding: 4% 2%;
+	}
+
 }
 
 .plan-display{
 	padding: 0% 2%;
+
+	@include mixins.desktop {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .plan{
@@ -109,6 +127,10 @@ a {
 	border: 5px variables.$dark-blue solid;
 	width: 100%;
 	margin-bottom: 2%;
+
+	@include mixins.desktop {
+		width: 33%;
+	}
 
 	&__upper{
 		border: 2px solid black;
@@ -121,6 +143,12 @@ a {
 		&_featured{
 			background-color: lightgoldenrodyellow;
 		}
+
+		@include mixins.desktop {
+			padding: 5% 2%;
+		}
+
+
 	}
 
 	&__title{
@@ -128,6 +156,17 @@ a {
 		text-transform: uppercase;
 		padding-bottom: 1%;
 		font-weight: bold;
+
+		@include mixins.desktop {
+			font-size: 1.5rem;
+			padding-bottom: 2%;
+		}
+	}
+
+	&__desc{
+		@include mixins.desktop {
+			font-size: 0.875rem;
+		}
 	}
 
 	&__lower{
@@ -139,17 +178,29 @@ a {
 		&_featured{
 			padding-top: 3%;
 		}
+
+		@include mixins.desktop {
+			padding-top: 7%;
+		}
 	}
 
 	&__price{
 		font-weight: bold;
 		font-size: 2rem;
 		padding: 2%;
+
+		@include mixins.desktop {
+			padding-bottom: 7%;
+		}
 	}
 
 	&__features-list{
 		list-style: disc;
 		padding-bottom: 2%;
+
+		@include mixins.desktop {
+			padding-bottom: 7%;
+		}
 	}
 
 	&__button{
@@ -164,6 +215,10 @@ a {
 		&:hover{
 			filter: brightness(120%);
 		}
+
+		@include mixins.desktop {
+			margin-bottom: 7%;
+		}
 	}
 
 	&__banner{
@@ -173,5 +228,17 @@ a {
 		background-size: cover;
 		position: absolute;
 		top: 24%;
+
+		@include mixins.desktop {
+			top: 21%;
+		}
+	}
+}
+
+.footer{
+	margin: 5%;
+
+	&__text{
+		color: #909097;
 	}
 }
