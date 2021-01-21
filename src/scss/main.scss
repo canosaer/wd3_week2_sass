@@ -24,8 +24,71 @@ TABLE OF CONTENTS:
 	box-sizing: border-box;
 }
 
-body {
-	background: #ccc;
+body{
+	font-family:'Lucida Sans', sans-serif;
 }
 
+a {
+	text-decoration: none;
+	color: unset;
+}
 
+.header{
+	padding: 2%;
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+
+	&__logo-image{
+		background: url(../../src/img/logo.png);
+		background-size: cover;
+		width: 128px;
+		height: 41.5px;
+	}
+
+	&__text{
+		padding-left: 6px;
+		font-size: 1.625rem;
+		align-self: center;
+		font-weight: bold;
+	}
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+	width: 140px;
+
+	&__icon{
+		background-size: cover;
+		width: 35px;
+		height: 35px;
+		cursor: pointer;
+
+		&_toggle{
+			background: url(../../src/img/hamburger.png);
+			background-size: contain;
+			border: 1px solid rgba(0,0,0,0.3);
+		}
+
+		&_search{
+			background: url(../../src/img/magnifying-glass.svg);
+		}
+
+		&_cart{
+			background: url(../../src/img/icon-shopping-cart.svg);
+		}
+
+	}
+}
+
+.hero{
+	padding: 5% 2%;
+
+	&__heading{
+		font-size: 2rem;
+		font-weight: bold;
+		margin-bottom: 2%;
+	}
+
+}

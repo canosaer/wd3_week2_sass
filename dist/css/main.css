@@ -153,6 +153,63 @@ TABLE OF CONTENTS:
 }
 
 body {
-  background: #ccc;
+  font-family: "Lucida Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.header {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.header__logo-image {
+  background: url(../../src/img/logo.png);
+  background-size: cover;
+  width: 128px;
+  height: 41.5px;
+}
+.header__text {
+  padding-left: 6px;
+  font-size: 1.625rem;
+  -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+.menu__icon {
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.menu__icon_toggle {
+  background: url(../../src/img/hamburger.png);
+  background-size: contain;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.menu__icon_search {
+  background: url(../../src/img/magnifying-glass.svg);
+}
+.menu__icon_cart {
+  background: url(../../src/img/icon-shopping-cart.svg);
+}
+
+.hero {
+  padding: 5% 2%;
+}
+.hero__heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2%;
 }
 /*# sourceMappingURL=main.css.map */
